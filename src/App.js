@@ -1,22 +1,47 @@
-import logo from "./logo.svg";
 import "./App.css";
 import { useState } from "react";
-import { Route, Routes } from "react-router-dom";
-import Login from "./pages/Login";
-import Home from "./pages/Home";
+import ReactQuill from "react-quill";
+import "react-quill/dist/quill.snow.css";
+import { formats, modules } from "./textEditorModules";
 
 function App() {
-  const [login, setLogin] = useState(sessionStorage.getItem("token") || null);
+  const [value, setValue] = useState("");
 
   return (
-    <Routes>
-      <Route path="*" element={<Login setLogin={setLogin}/>} />
-      {login ? (
-        <Route path="/home" element={<Home />} />
-      ) : (
-        <Route path="/login" element={<Login setLogin={setLogin} />} />
-      )}
-    </Routes>
+    <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginTop: "5%",
+        }}
+      >
+        <ReactQuill
+          style={{
+            width: "80%",
+            borderRadius: "8px",
+            paddingBottom: "10%",
+          }}
+          theme="snow"
+          value={value}
+          onChange={setValue}
+          formats={formats}
+          modules={modules}
+        />
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          marginRight: "15%",
+          marginBottom: "15%",
+          marginLeft: "15%",
+          width: "50%",
+        }}
+      >
+        <div>{value && value}</div>
+      </div>
+    </>
   );
 }
 
