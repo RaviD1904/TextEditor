@@ -1,47 +1,45 @@
-import "./App.css";
-import { useState } from "react";
-import ReactQuill from "react-quill";
-import "react-quill/dist/quill.snow.css";
-import { formats, modules } from "./textEditorModules";
-
+import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
+// import GenericRoutes from "./Routes";
+// import * as Component from "./components/common";
+import Header from "./components/common/Header"
+import Popup from "./components/common/PopUp";
+import GenericRoutes from "./Routes";
+import Footer from "./components/common/Footer";
 function App() {
-  const [value, setValue] = useState("");
+  const [showPopup, setShowPopup] = useState(false);
+  //Smooth Scroll
+  const location = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
+  
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
+
+  //PopUp Box
+  useEffect(() => {
+    const popupTimeout = setTimeout(() => {
+      setShowPopup(true);
+    }, 300000);
+
+    return () => {
+      clearTimeout(popupTimeout);
+    };
+  }, [showPopup]);
 
   return (
-    <>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginTop: "5%",
-        }}
-      >
-        <ReactQuill
-          style={{
-            width: "80%",
-            borderRadius: "8px",
-            paddingBottom: "10%",
-          }}
-          theme="snow"
-          value={value}
-          onChange={setValue}
-          formats={formats}
-          modules={modules}
-        />
-      </div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          marginRight: "15%",
-          marginBottom: "15%",
-          marginLeft: "15%",
-          width: "50%",
-        }}
-      >
-        <div>{value && value}</div>
-      </div>
-    </>
+    <div>
+        <Header/>
+      {/* main code */}
+      {/* <Header/>
+      {showPopup && <Popup onClose={handleClosePopup} />}
+      <GenericRoutes />
+      <Footer /> */}
+      {/* main code */}
+    </div>
   );
 }
 
