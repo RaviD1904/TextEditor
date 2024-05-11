@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Product Title 1",
+      "type": "Product Type 1",
+      "description": "Product Description 1",
+      "cover": "/image/path1.jpg",
+      "details": {
+        "baseImage": "/baseImage1.jpg",
+        "images": [
+          "/image1.jpg",
+          "/image2.jpg",
+          "/image3.jpg"
+        ],
+        "size": "Product Size 1"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Product Title 2",
+      "type": "Product Type 2",
+      "description": "Product Description 2",
+      "cover": "/image/path2.jpg",
+      "details": {
+        "baseImage": "/baseImage2.jpg",
+        "images": [
+          "/image4.jpg",
+          "/image5.jpg",
+          "/image6.jpg"
+        ],
+        "size": "Product Size 2"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Product Title 3",
+      "type": "Product Type 3",
+      "description": "Product Description 3",
+      "cover": "/image/path3.jpg",
+      "details": {
+        "baseImage": "/baseImage3.jpg",
+        "images": [
+          "/image7.jpg",
+          "/image8.jpg",
+          "/image9.jpg"
+        ],
+        "size": "Product Size 3"
+      }
+    }
+  ]
+  

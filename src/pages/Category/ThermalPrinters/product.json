@@ -1,0 +1,27 @@
+{
+    "title": "Printer Title",
+    "type": "Printer Type",
+    "variants": [
+      { "id": 1, "model": "Variant 1" },
+      { "id": 2, "model": "Variant 2" }
+    ],
+    "images": [
+      { "id": 1, "image": "image1.jpg" },
+      { "id": 2, "image": "image2.jpg" },
+      { "id": 3, "image": "image3.jpg" },
+      { "id": 4, "image": "image4.jpg" }
+    ],
+    "item": "Printer Item",
+    "model": "Printer Model",
+    "specification": [
+      { "Specification 1": "Value 1" },
+      { "Specification 2": "Value 2" },
+      { "Specification 3": "Value 3" }
+    ],
+    "description": [
+      "Feature 1",
+      "Feature 2",
+      "Feature 3"
+    ]
+  }
+  

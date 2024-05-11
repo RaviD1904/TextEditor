@@ -1,0 +1,22 @@
+{
+    "background": "bg-white",
+    "height": "h-screen",
+    "width": "w-screen",
+    "position": "fixed",
+    "top": "top-0",
+    "left": "left-0",
+    "flex": "flex",
+    "justifyContent": "justify-center",
+    "alignItems": "items-center",
+    "zIndex": "z-50",
+    "backdropFilter": "blur(4px)",
+    "animationData": "LoaderAnimation",
+    "loop": true,
+    "autoplay": true,
+    "speed": 1.5,
+    "animationStyle": {
+      "width": 200,
+      "height": 200
+    }
+  }
+  
