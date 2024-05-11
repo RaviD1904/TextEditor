@@ -5,7 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { IoIosClose } from "react-icons/io";
 import { AnimativeRightLeft } from "../../ui/FadeAnimation";
 import "./Header.scss";
-
+import LOGO_IMAGE from "../../../image/logo_black.svg"
 const Header = () => {
   const location = useLocation();
 
@@ -31,7 +31,7 @@ const Header = () => {
         <div className="relative flex items-center justify-between">
           <span className="ml-2 text-xl font-bold tracking-wide uppercase">
             <Link to={RouteNavigation.home}>
-              <img src="/image/logo_black.svg" alt="logo" />
+              <img src={LOGO_IMAGE} alt="logo" />
             </Link>
           </span>
           <ul className="orkney_light items-center hidden space-x-16 lg:flex">

@@ -1,0 +1,39 @@
+[
+    {
+      "id": 1,
+      "title": "Blog Title 1",
+      "img": "image1.jpg",
+      "detailPage": {
+        "para_1": "Paragraph 1 content for Blog 1",
+        "img_detail": "Image detail for Blog 1",
+        "para_2": "Paragraph 2 content for Blog 1",
+        "para_3": "Paragraph 3 content for Blog 1",
+        "para_4": "Paragraph 4 content for Blog 1"
+      }
+    },
+    {
+      "id": 2,
+      "title": "Blog Title 2",
+      "img": "image2.jpg",
+      "detailPage": {
+        "para_1": "Paragraph 1 content for Blog 2",
+        "img_detail": "Image detail for Blog 2",
+        "para_2": "Paragraph 2 content for Blog 2",
+        "para_3": "Paragraph 3 content for Blog 2",
+        "para_4": "Paragraph 4 content for Blog 2"
+      }
+    },
+    {
+      "id": 3,
+      "title": "Blog Title 3",
+      "img": "image3.jpg",
+      "detailPage": {
+        "para_1": "Paragraph 1 content for Blog 3",
+        "img_detail": "Image detail for Blog 3",
+        "para_2": "Paragraph 2 content for Blog 3",
+        "para_3": "Paragraph 3 content for Blog 3",
+        "para_4": "Paragraph 4 content for Blog 3"
+      }
+    }
+  ]
+  

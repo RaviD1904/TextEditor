@@ -4,6 +4,22 @@ import Loader from "./components/common/Loader";
 import Home from "./pages/HomePage";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
+import Blog from "./pages/Blog";
+import BlogDetailPage from "./pages/Blog/DetailedPage";
+import Kiosk from "./pages/Category/SelfServiceKiosk";
+import Signage from "./pages/Category/DigitalSignage";
+import KioskProducts from "./pages/Category/SelfServiceKiosk/products";
+import PosMachines from "./pages/HomePage/PosMachines";
+import ThermalPrinter from "./pages/Category/ThermalPrinters";
+import BarcodePrinter from "./pages/Category/BarcodePrinters";
+import BarcodeScanner from "./pages/Category/BarcodeScanners";
+import BarcodeScanners from "./pages/Category/BarcodeScanners/products";
+import CashCountingMachine from "./pages/Category/CashCountingMachines";
+import CashDrawer from "./pages/Category/CashDrawers";
+import TermsAndConditions from "./pages/Support/TermsAndConditions";
+import PrivacyPolicy from "./pages/Support/PrivacyPolicy";
+import PageNotFound from "./pages/Support/PageNotFound";
+import ThermalPrinters from "./pages/Category/ThermalPrinters/products";
 export const RouteNavigation = {
   home: "/",
   about: "/about",
@@ -53,60 +69,60 @@ const GenericRoutes = () => {
         <Route path={RouteNavigation.home} element={<Home />} />
         <Route path={RouteNavigation.about} element={<AboutUs/>} />
         <Route path={RouteNavigation.contact} element={<ContactUs/>} />
-        <Route path={RouteNavigation.blog} element={<Page.Blog />} />
+        <Route path={RouteNavigation.blog} element={<Blog/>} />
         <Route
           path={RouteNavigation.blogDetails}
-          element={<Page.BlogDetailPage />}
+          element={<BlogDetailPage />}
         />
-        <Route path={RouteNavigation.kiosk} element={<Page.Kiosk />} />
-        <Route path={RouteNavigation.signage} element={<Page.Signage />} />
+        <Route path={RouteNavigation.kiosk} element={<Kiosk />} />
+        <Route path={RouteNavigation.signage} element={<Signage />} />
         <Route
           path={RouteNavigation.kioskDevice}
-          element={<Page.KioskProducts />}
+          element={<KioskProducts />}
         />
         <Route
           path={RouteNavigation.posMachine}
-          element={<Page.PosMachine />}
+          element={<PosMachines />}
         />
         <Route
           path={RouteNavigation.thermalPrinter}
-          element={<Page.ThermalPrinter />}
+          element={<ThermalPrinter />}
         />
         <Route
           path={RouteNavigation.thermalPrinterDevice}
-          element={<Page.ThermalPrinterDevice />}
+          element={<ThermalPrinters />}
         />
         <Route
           path={RouteNavigation.barcodePrinterDevice}
-          element={<Page.BarcodePrinter />}
+          element={<BarcodePrinter />}
         />
         <Route
           path={RouteNavigation.barcodeScanner}
-          element={<Page.BarcodeScanner />}
+          element={<BarcodeScanner />}
         />
         <Route
           path={RouteNavigation.barcodeScannerDevice}
-          element={<Page.BarcodeScannerDevice />}
+          element={<BarcodeScanners />}
         />
         <Route
           path={RouteNavigation.cashCountingDevice}
-          element={<Page.CashCountingMachines />}
+          element={<CashCountingMachine />}
         />
         <Route
           path={RouteNavigation.cashDrawers}
-          element={<Page.CashDrawers />}
+          element={<CashDrawer />}
         />
         <Route
           path={RouteNavigation.termsAndConditions}
-          element={<Page.TermsAndConditions />}
+          element={<TermsAndConditions />}
         />
         <Route
           path={RouteNavigation.privacy}
-          element={<Page.PrivacyPolicy />}
+          element={<PrivacyPolicy />}
         />
         <Route
           path={RouteNavigation.pagenotfound}
-          element={<Page.PageNotFound />}
+          element={<PageNotFound />}
         />
       </Routes>
     </>
