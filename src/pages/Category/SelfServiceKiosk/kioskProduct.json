@@ -1,27 +1,42 @@
 {
-    "title": "Printer Title",
-    "type": "Printer Type",
-    "variants": [
-      { "id": 1, "model": "Variant 1" },
-      { "id": 2, "model": "Variant 2" }
-    ],
-    "images": [
-      { "id": 1, "image": "image1.jpg" },
-      { "id": 2, "image": "image2.jpg" },
-      { "id": 3, "image": "image3.jpg" },
-      { "id": 4, "image": "image4.jpg" }
-    ],
-    "item": "Printer Item",
-    "model": "Printer Model",
-    "specification": [
-      { "Specification 1": "Value 1" },
-      { "Specification 2": "Value 2" },
-      { "Specification 3": "Value 3" }
-    ],
-    "description": [
-      "Feature 1",
-      "Feature 2",
-      "Feature 3"
-    ]
-  }
-  
+  "kiosk": [
+    {
+      "id": 1,
+      "title": "Kiosk Title 1",
+      "type": "Kiosk Type 1",
+      "image":"../../../image/kiosk/product/type_01/cover.png",
+      "description": "Description of Kiosk 1"
+    },
+    {
+      "id": 2,
+      "title": "Kiosk Title 2",
+      "type": "Kiosk Type 2",
+      "image": "../../../image/kiosk/product/type_02/cover.png",
+      "description": "Description of Kiosk 2"
+    },
+    {
+      "id": 3,
+      "title": "Kiosk Title 3",
+      "type": "Kiosk Type 3",
+      "image": "/path/to/image3.png",
+      "description": "Description of Kiosk 3"
+    }
+  ],
+  "sector": [
+    {
+      "id": 1,
+      "title": "Sector Title 1",
+      "image": "/path/to/sector_image1.png"
+    },
+    {
+      "id": 2,
+      "title": "Sector Title 2",
+      "image": "/path/to/sector_image2.png"
+    },
+    {
+      "id": 3,
+      "title": "Sector Title 3",
+      "image": "/path/to/sector_image3.png"
+    }
+  ]
+}

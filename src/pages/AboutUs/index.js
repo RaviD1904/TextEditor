@@ -17,6 +17,8 @@ import PRODUCT_05 from "../../image/category/product_05.svg";
 import PRODUCT_06 from "../../image/category/product_06.svg";  
 import PRODUCT_07 from "../../image/category/product_07.svg";  
 import PRODUCT_08 from "../../image/category/product_08.svg";  
+import MASK_ABOUT_PRIMARY from "../../image/about/about_mask_primary.svg"
+import MASK_ABOUT_SECONDARY from "../../image/about/about_mask_secondary.svg"
 
 const AboutUs = () => {
   const [textVisible, setTextVisible] = useState(false);
@@ -156,12 +158,12 @@ const AboutUs = () => {
                     />
                     <img
                       className="absolute top-1 left-1"
-                      src="/image/about/about_mask_primary.svg"
+                      src={MASK_ABOUT_PRIMARY}
                       alt="element"
                     />
                     <img
                       className="absolute top-0 group-hover:rotate-[110deg] duration-500"
-                      src="/image/about/about_mask_secondary.svg"
+                      src={MASK_ABOUT_SECONDARY}
                       alt="element"
                     />
                   </div>

@@ -1,7 +1,8 @@
 import kioskDevices from "./kioskProduct.json";
 import { Link } from "react-router-dom";
 import Enquiry from "../../HomePage/Enquiry";
-
+import KIOSK_BANNER from "../../../image/kiosk/kiosk_banner.png"
+import { kiosk, sector } from "./data";
 export default function Kiosk() {
   const createHTMLString = (text) => {
     return { __html: text.replace(/\n/g, "<br />") };
@@ -10,7 +11,7 @@ export default function Kiosk() {
     <div>
       <img
         className="w-full"
-        src="/image/kiosk/kiosk_banner.png"
+        src={KIOSK_BANNER}
         alt="banner"
       />
       <div className="max-w-[1024px] m-auto px-4">
@@ -24,7 +25,7 @@ export default function Kiosk() {
             diverse industries.
           </p>
         </div>
-        {kioskDevices.kiosk.map((kiosk, index) => {
+        {kiosk && kiosk.map((kiosk, index) => {
           return (
             <div key={index} className="mb-10">
               <Link to={`${kiosk.id}`}>
@@ -64,7 +65,7 @@ export default function Kiosk() {
       </div>
       <div className="max-w-[1024px] mx-auto px-4 pb-5 mb-10">
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 text-[12px] gap-10">
-          {kioskDevices.sector.map((sector) => {
+          {sector.map((sector) => {
             return (
               <div
                 key={sector.id}
