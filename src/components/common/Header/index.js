@@ -268,7 +268,8 @@ const Header = () => {
                         to={RouteNavigation.contact}
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        Contact Us
+                        {/* Contact Us */}
+                        Demo
                       </Link>
                     </li>
                   </ul>
