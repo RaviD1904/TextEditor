@@ -5,7 +5,7 @@ import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
 import { RiCloseFill } from "react-icons/ri";
 import Popup from "../../../components/common/PopUp";
-import POS_MACHINE_BANNER from "../../../image/home/POS-Banner-large_01.png"
+import POS_MACHINE_BANNER from "../../../image/home/POS-Banner-large_01.jpg"
 const oddProductsList = Product.filter((obj) => obj.id % 2 !== 0);
 const EvenProductList = Product.filter((obj) => obj.id % 2 === 0);
 const Transition = React.forwardRef(function Transition(props, ref) {

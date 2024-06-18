@@ -13,12 +13,14 @@ import KIOSK_01 from "../../image/home/Kiosk_1.png";
 import KIOSK_02 from "../../image/home/kiosk_2.png";
 import Home_Banner from "../../image/home/Home-Banner-01.jpg";
 import HOME_BANNER_LARGE from "../../image/home/Home-Banner-large_01.png";
+import ELITE from "../../image/home/Elite_Banner.jpg"
 import POS_BANNER from "../../image/home/POS-Banner-01.jpg";
-import POS_BANNER_LARGE from "../../image/home/POS-Banner-large_01.png";
+import POS_BANNER_LARGE from "../../image/home/POS-Banner-large_01.jpg";
 import POS_BANNER_02 from "../../image/home/POS-Banner-02.jpg"
-import POS_BANNER_LARGE_02 from "../../image/home/POS-Banner-large_02.png"
+import POS_BANNER_LARGE_02 from "../../image/home/POS-Banner-large_02.jpg"
 import POS_BANNER_03 from "../../image/home/POS-Banner-03.jpg"
-import POS_BANNER_LARGE_03 from "../../image/home/POS-Banner-large_03.png"
+import POS_BANNER_LARGE_03 from "../../image/home/POS-Banner-large_03.jpg"
+import HOME_SENSIBLE from "../../image/home/Home_Sensible10.jpg"
 const Home = () => {
   const location = useLocation();
   const enquiry = useRef();
@@ -35,19 +37,26 @@ const Home = () => {
       {/* Top section */}
       <Link to={RouteNavigation.kiosk}>
         <div className="relative" id="home-top-banner">
-          <div className="bg-[#FF972E] h-[220px] sm:h-[300px] md:h-[460px] 2xl:h-[600px] " />
-          <div className="bg-[#F6F6F6] h-[340px] md:h-[560px] lg:h-[320px] " />
+          <div className="flex gap-24">
+                <img
+                  className="w-80 sm:w-96 md:w-full"
+                  src={HOME_SENSIBLE}
+                  alt="kiosk"
+                />
+              </div>
+          {/* <div className="bg-[#FF972E] h-[220px] sm:h-[300px] md:h-[460px] 2xl:h-[600px] " /> */}
+          {/* <div className="bg-[#F6F6F6] h-[340px] md:h-[560px] lg:h-[320px] " /> */}
           <div className="m-auto flex justify-center">
             <div className="flex flex-col-reverse lg:flex-row justify-center absolute top-5 px-4 py-5 md:px-24 lg:px-8">
               <div className="flex flex-col gap-5 lg:gap-11 lg:mt-40 2xl:mt-72 text-center lg:text-start">
                 <div className="poppins_semibold text-2xl lg:text-5xl xl:text-6xl leading-8 lg:leading-[80px] xl:leading-[90px] text-black lg:text-white">
-                  <AnimativeLeftRight>
+                  {/* <AnimativeLeftRight>
                     B|POS <br />
                     Self Service Kiosk
-                  </AnimativeLeftRight>
+                  </AnimativeLeftRight> */}
                 </div>
                 <div className="poppins_light text-[11px] lg:text-3xl leading-5 lg:leading-[43px] mt-0 lg:mt-16">
-                  <AnimativeLeftRight>
+                  {/* <AnimativeLeftRight>
                     Engage Your Audience with <br /> Captivating Kiosk and
                     Digital Signage
                     <div className="mt-2 md:mt-5">
@@ -55,22 +64,22 @@ const Home = () => {
                         Read More
                       </button>
                     </div>
-                  </AnimativeLeftRight>
+                  </AnimativeLeftRight> */}
                 </div>
               </div>
-              <div className="flex gap-24">
+              {/* <div className="flex gap-24">
                 <img
                   className="w-80 sm:w-96 md:w-full"
                   src={KIOSK_01}
                   alt="kiosk"
                 />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </Link>
 
-      <Link to={RouteNavigation.signage}>
+      {/* <Link to={RouteNavigation.signage}>
         <div className="mb-5 relative max-w-[1024px] px-4 py-10 m-auto flex flex-col lg:flex-row items-center justify-between">
           <div>
             <img
@@ -95,7 +104,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </Link>
+      </Link> */}
 
       <AnimativeBottomTop>
         <div className="text-center m-auto w-auto py-10 bg-[#F1EDEB]">
@@ -115,20 +124,20 @@ const Home = () => {
         <div className="mb-5 relative">
           <img
             className="w-full flex md:hidden"
-            src={Home_Banner}
+            src={ELITE}
             alt="pos-machine-banner"
           />
           <img
             className="w-full hidden md:flex"
-            src={HOME_BANNER_LARGE}
+            src={ELITE}
             alt="POS-machine-banner"
           />
           <div className="absolute left-[5%] top-[35%] md:top-[20%] lg:top-[30%]">
             <h2 className="poppins_semibold text-[18px] sm:text-4xl lg:text-6xl leading-[20px] sm:leading-[50px] lg:leading-[76px]">
-              B|POS <br /> POS Machine
+              ELITE <br /> POS Machine
             </h2>
             <h4 className="poppins_light text-[13px] sm:text-3xl leading-[15px] sm:leading-[43px]">
-              Desktop POS
+              Desktop POS | ELITE 
             </h4>
             <div className="mt-2 md:mt-5">
               <Link to={RouteNavigation.posMachine}>

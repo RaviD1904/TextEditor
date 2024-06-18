@@ -3,8 +3,8 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Link } from "react-router-dom";
 import { RouteNavigation } from "../../Routes";
-import HOME_GRID_01 from "../../image/home/home-grid-01.png"
-import HOME_GRID_02 from "../../image/home/home-grid-02.png"
+import HOME_GRID_01 from "../../image/home/home-grid-01.jpg"
+import HOME_GRID_02 from "../../image/home/home-grid-02.jpg"
 const PosMachines = () => {
   const controls = useAnimation();
   const [ref, inView] = useInView();
